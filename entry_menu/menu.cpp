@@ -35,16 +35,15 @@ void entry_menu(){
             std::cout << "\n\n\t Please enter the employee identification number: ";
             std::cin >> num;
             employee.update_employee_record(num);
+            break;
         case '5':
             std::cout << "\n\n\t Please enter the employee identification number: ";
             std::cin >> num;
             employee.delete_employee_record(num);
             break;
         case '6':
-            exit(0);
             break;
         default:
             std::cout << "\a";entry_menu();
-            break;
     }
 }
